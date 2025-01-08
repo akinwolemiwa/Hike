@@ -54,6 +54,28 @@ struct SettingsView: View {
             //MARK: - SECTION ICONS
             
             //MARK: - SECTION ABOUT
+            Section(
+                header: Text("about the app"),
+                footer: HStack{
+                    Spacer()
+                    Text("Copyright © All right reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ) {
+             //1. Basic Label Content
+            //LabeledContent("Application", value: "Hike")
+                
+            //2. Advanced Label Content
+                CustomListRowView(rowicons: "apps.iphone", rowlabel: "Application", rowContent: "Hike", rowTintColour: .blue)
+                CustomListRowView(rowicons: "info.circle", rowlabel: "Compatibility", rowContent: "iOS, iPadOS", rowTintColour: .red)
+                CustomListRowView(rowicons: "swift", rowlabel: "Technology", rowContent: "Swift", rowTintColour: .orange)
+                CustomListRowView(rowicons: "gear", rowlabel: "Version", rowContent: "1.0.0", rowTintColour: .purple)
+                CustomListRowView(rowicons: "ellipsis.curlybraces", rowlabel: "Developer", rowContent: "Akin", rowTintColour: .mint)
+                CustomListRowView(rowicons: "paintpalette", rowlabel: "Designer", rowContent: "R.P Udemy", rowTintColour: .pink)
+                CustomListRowView(rowicons: "globe", rowlabel: "Website", rowTintColour: .indigo, rowLinkLabel: "Credo Academy", rowLinkDestination: "https://credo.academy")
+              
+            }
         
         }//:List
      

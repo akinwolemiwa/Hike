@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261498332D2D40D5002E87A5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261498322D2D40D5002E87A5 /* SettingsView.swift */; };
+		26C7878E2D2EA12100E07E34 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C7878D2D2EA12100E07E34 /* CustomListRowView.swift */; };
 		26ECED822D117CD700E18D59 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ECED812D117CD700E18D59 /* GradientButtonStyle.swift */; };
 		26ECED842D11956500E18D59 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ECED832D11956500E18D59 /* CustomCircleView.swift */; };
 		26ECED862D119A0F00E18D59 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ECED852D119A0F00E18D59 /* MotionAnimationView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		261498322D2D40D5002E87A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		26C7878D2D2EA12100E07E34 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		26D8B13A2D2D246B00F44EF7 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		26ECED812D117CD700E18D59 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		26ECED832D11956500E18D59 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				26F6A8D12D0B1462004121DD /* CustomButtonView.swift */,
 				26ECED832D11956500E18D59 /* CustomCircleView.swift */,
 				26ECED852D119A0F00E18D59 /* MotionAnimationView.swift */,
+				26C7878D2D2EA12100E07E34 /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				26F6A8BE2D0AFC62004121DD /* ContentView.swift in Sources */,
 				26ECED842D11956500E18D59 /* CustomCircleView.swift in Sources */,
+				26C7878E2D2EA12100E07E34 /* CustomListRowView.swift in Sources */,
 				26F6A8CA2D0B023A004121DD /* CardView.swift in Sources */,
 				26F6A8BC2D0AFC62004121DD /* HikeApp.swift in Sources */,
 				26F6A8D22D0B1462004121DD /* CustomButtonView.swift in Sources */,
