@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    //MARK: - PROPERTIES
+    
+    private let alternateAppIcons: [String] = [
+    "AppIcon-MagnifyingGlass",
+    "AppIcon-Map",
+    "AppIcon-Mushroom",
+    "AppIcon-Campfire",
+    "AppIcon-Camera",
+    "AppIcon-Backpack",
+    ]
     var body: some View {
         List{
             //MARK: - SECTION HEADER
@@ -38,20 +49,50 @@ struct SettingsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 16)
                 .frame(maxWidth: .infinity)
-                    
-                
-                
-              
             }//: HEADER
             .listRowSeparator(.hidden)
-            
-            
-            
-        
-           
-            
+         
             
             //MARK: - SECTION ICONS
+            
+            Section(
+                header: Text("alternate app icons")
+               
+            ){
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack (spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button(action: {
+                               print("Icon \(alternateAppIcons[item]) was pressed")
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]) {
+                                    error in
+                                    if error != nil {
+                                        print ("Failed \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print ("Success")
+                                    }
+                                }
+                            }, label: {
+                               Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                                    
+                            }
+                            )
+                        }
+                    }
+                }.buttonStyle(.borderless)//SCROLL VIEW
+                    .padding(.top, 12)
+            Text("Choose your favourite appicon from the selection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+            }
+            .listRowSeparator(.hidden)
             
             //MARK: - SECTION ABOUT
             Section(
